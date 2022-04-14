@@ -37,14 +37,6 @@ Parameters:
     Description: The name of the CodeCommit Repo for the project
     Type: String
     Default: "AmplifyCoreWorkshop"
-  RepoAssetBucket:
-    Description: The S3 Bucket containing the workshop repo assets
-    Type: String
-    Default: "amplifycoreworkshopassets-us-west-2"
-  RepoAssetKey:
-    Description: The S3 file key containing the workshop repo assets
-    Type: String
-    Default: "workshop-repo-scaffold.zip"
 Conditions: 
   Create3rdPartyResources: !Equals [ !Ref C9EnvType, 3rdParty ]
 #  CreateJamResources: !Equals [ !Ref C9EnvType, jam ]
@@ -166,11 +158,6 @@ Resources:
     Properties:
       RepositoryName: !Sub ${RepoName}
       RepositoryDescription: A repository for the Retail Demo Store app in the Amplify Core Workshop.
-      Code:
-        BranchName: main
-        S3: 
-          Bucket: !Sub ${RepoAssetBucket}
-          Key: !Sub ${RepoAssetKey}
       Tags:
         - Key: auto-delete
           Value: never
