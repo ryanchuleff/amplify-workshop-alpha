@@ -57,7 +57,4 @@ git config --global credential.helper '!aws codecommit credential-helper $@'
 git config --global credential.UseHttpPath true
 
 # Download lab repository and install packages
-git clone https://git-codecommit.$AWS_REGION.amazonaws.com/v1/repos/AmplifyCoreWorkshop
-cd AmplifyCoreWorkshop
-rm -rf package-lock.json
-npm i
+git clone https://git-codecommit.$AWS_REGION.amazonaws.com/v1/repos/amplify-core-workshop
