@@ -36,7 +36,7 @@ Parameters:
   RepoName:
     Description: The name of the CodeCommit Repo for the project
     Type: String
-    Default: "AmplifyCoreWorkshop"
+    Default: "amplify-core-workshop"
 Conditions: 
   Create3rdPartyResources: !Equals [ !Ref C9EnvType, 3rdParty ]
 #  CreateJamResources: !Equals [ !Ref C9EnvType, jam ]
