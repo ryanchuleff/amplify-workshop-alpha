@@ -25,13 +25,13 @@
 #==============================================================================
 
 # Download the javascript data loader
-curl -LO https://raw.githubusercontent.com/ryanchuleff/amplify-workshop-alpha/main/data-loader.zip file
+curl -LO https://raw.githubusercontent.com/ryanchuleff/amplify-workshop-alpha/main/amplify-loader.zip file
 
 # Unzip the package
-unzip data-loader.zip
+unzip amplify-loader.zip
 
 # Install required libraries
-cd data-loader
+cd amplify-loader
 npm i
 
 # Copy the AWS Exports file for the AppSync variables
@@ -41,9 +41,9 @@ cp ../amplify-core-workshop/src/aws-exports.js .
 sed -i 's/export default/module.exports =/' aws-exports.js
 
 # Run the data loader
-# node loader.js
+node loader.js
 
 # Cleanup
-# cd ..
+cd ..
 # rm -rf data-loader
 # rm -- "$0"
