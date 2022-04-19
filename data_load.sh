@@ -45,5 +45,6 @@ node loader.js
 
 # Cleanup
 cd ..
-# rm -rf data-loader
-# rm -- "$0"
+rm -rf amplify-loader
+echo "FINISHED"
+rm -- "$0"
