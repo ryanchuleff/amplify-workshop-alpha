@@ -55,6 +55,7 @@ git config --global user.name "Workshop User"
 git config --global user.email workshop.user@amazon.com
 git config --global credential.helper '!aws codecommit credential-helper $@'
 git config --global credential.UseHttpPath true
+git config --global init.defaultBranch main
 
 # Download lab repository and install packages
 git clone https://git-codecommit.$AWS_REGION.amazonaws.com/v1/repos/amplify-core-workshop
