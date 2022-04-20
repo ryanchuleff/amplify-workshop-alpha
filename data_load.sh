@@ -47,5 +47,3 @@ node loader.js
 cd ..
 rm -rf amplify-loader
 rm amplify-loader.zip
-
-rm -- "$0"
