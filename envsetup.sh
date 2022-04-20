@@ -59,6 +59,8 @@ git config --global init.defaultBranch main
 
 # Download lab repository and install packages
 git clone https://git-codecommit.$AWS_REGION.amazonaws.com/v1/repos/amplify-core-workshop
+
+# git global 'defaultBranch' is not taking effect, so we have to checkout a new branch
 cd amplify-core-workshop
 git checkout -b main
 cd ..
