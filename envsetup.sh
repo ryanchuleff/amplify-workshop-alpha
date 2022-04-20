@@ -59,3 +59,6 @@ git config --global init.defaultBranch main
 
 # Download lab repository and install packages
 git clone https://git-codecommit.$AWS_REGION.amazonaws.com/v1/repos/amplify-core-workshop
+cd amplify-core-workshop
+git checkout -b main
+cd ..
