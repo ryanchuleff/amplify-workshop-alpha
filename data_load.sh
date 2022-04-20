@@ -35,7 +35,7 @@ cd amplify-loader
 npm i
 
 # Copy the AWS Exports file for the AppSync variables
-cp ../amplify-core-workshop/src/aws-exports.js .
+cp ~/environment/amplify-core-workshop/src/aws-exports.js .
 
 # Switch file over to commonJS format
 sed -i 's/export default/module.exports =/' aws-exports.js
