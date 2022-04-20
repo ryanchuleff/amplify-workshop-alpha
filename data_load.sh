@@ -25,7 +25,7 @@
 #==============================================================================
 
 # Download the javascript data loader
-curl -LO https://raw.githubusercontent.com/ryanchuleff/amplify-workshop-alpha/main/amplify-loader.zip file
+curl -LO https://github.com/ryanchuleff/amplify-workshop-alpha/raw/main/amplify-loader.zip
 
 # Unzip the package
 unzip amplify-loader.zip
@@ -46,5 +46,6 @@ node loader.js
 # Cleanup
 cd ..
 rm -rf amplify-loader
-echo "FINISHED"
+rm amplify-loader.zip
+
 rm -- "$0"
