@@ -42,6 +42,10 @@ npm install npm
 # Upgrade CDK version
 npm i aws-cdk --force
 
+# Install node
+nvm install 16
+nvm alias default 16
+
 # Export the Account ID and the Region
 export ACCOUNT_ID=$(aws sts get-caller-identity --output text --query Account)
 export AWS_REGION=$(curl -s 169.254.169.254/latest/dynamic/instance-identity/document | jq -r '.region')
